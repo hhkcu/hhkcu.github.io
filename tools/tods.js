@@ -5,6 +5,9 @@ document.addEventListener("keypress", (ev) => {
     let ak = code
     if (code2 == "KeyEnter") {
         ak = "\n"
+    } else if (code2 == "KeyBackspace") {
+        terminal.innerHTML = terminal.innerHTML.substring(0, terminal.innerHTML.length-1)
+        return
     }
     terminal.innerHTML += ak
 })
