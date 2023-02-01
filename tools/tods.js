@@ -1,11 +1,12 @@
 let terminal = document.getElementById("terminal")
-document.addEventListener("keypress", (ev) => {
+document.addEventListener("keydown", (ev) => {
     let code = ev.key
     let code2 = ev.code
+    let kc = ev.keyCode;
     let ak = code
-    if (code2 == "KeyEnter") {
+    if (kc == 13) {
         ak = "\n"
-    } else if (code2 == "KeyBackspace") {
+    } else if (kc == 8) {
         terminal.innerHTML = terminal.innerHTML.substring(0, terminal.innerHTML.length-1)
         return
     }
