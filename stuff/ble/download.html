@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BLE Downloads</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <xml id="Hydrogen-Config">
+        <font targetClass="^all">RobotoMono</font>
+        <setting targetClass="^all:text">Alignment=Center</setting>
+        <lua targetClass="downloadSrc" event="onClick">
+            OxygenBrowserAPI:DownloadFile("https://arm8086.github.io/stuff/ble/assets/ble.lua")
+        </lua>
+        <lua targetClass="downloadRuntime" event="onClick">
+            OxygenBrowserAPI:DownloadFile("https://arm8086.github.io/stuff/ble/assets/bleRuntime.hdl")
+        </lua>
+    </xml>
+    <h2><Center>BLE - Bad Lua Engine</Center></h2>
+    <h3><center>why did i make this again</center></h3>
+    <ul>
+        <li>if used as standalone script, it'll create a part with fullscreen window for you</li>
+        <li>if used in hydrogen, it will just create a window</li>
+    </ul>
+    <button class="downloadSrc">Download Source</button>
+    <button class="downloadRuntime">Download Runtime</button>
+    don't know which to choose?
+    if you:
+    <ul>
+        <li>want to develop a game using this engine, then download source</li>
+        <li>want to play a game, then download runtime</li>
+    </ul>
+</body>
+</html>
