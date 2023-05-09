@@ -4,7 +4,7 @@ document.addEventListener("keydown", (ev) => {
     let code2 = ev.code
     let kc = ev.keyCode;
     let ak = code
-    if (kc == 13) {
+    if (kc == 10) {
         ak = "\n"
     } else if (kc == 8) {
         terminal.innerHTML = terminal.innerHTML.substring(0, terminal.innerHTML.length-1)
